@@ -25,13 +25,12 @@ def p1(df_procedimentos, col_procedimento):
     procedimentos_list = df_procedimentos[col_procedimento].unique()    
     if 'HEMOGRAMA COMPLETO' in procedimentos_list:
         if 'CONTAGEM DE RETICULOCITOS' in procedimentos_list:
-            if set(procedimentos_list) & set(coombs_set)
+            if set(procedimentos_list) & set(coombs_set):
                 return True
             
     # Se não caiu em nenhuma das condições
     return False
-        
-
+      
 def filtro_p2(row):
     """
     - ureia E : 'DOSAGEM DE UREIA' ou 'CLEARANCE DE UREIA'
