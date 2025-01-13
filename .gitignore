@@ -1,2 +1,6 @@
 *.parquet
 *.pyc
+*.pdf
+*.csv
+*.txt
+*.docx
